@@ -11,7 +11,7 @@ do
 			read email
 			echo "Podaj nazwę commita"
 			read commit
-			echo "Podaj lokalizacje na dysku (podaj pełną lokalizacje np. X:\Folder"
+			echo "Podaj lokalizacje na dysku (podaj pełną lokalizacje np. X:\Folder)"
 			read lokalizacja
 			echo "Podaj link do repozytorium (nie podawaj https://github.com/ a tylko nazwa_użytkownika/nazwa_repozytorium)"
 			read rep
@@ -30,7 +30,7 @@ do
 		nie)
 			echo "Podaj nazwę commita"
 			read commit
-			echo "Podaj lokalizacje na dysku (podaj pełną lokalizacje np. X:\Folder"
+			echo "Podaj lokalizacje na dysku (podaj pełną lokalizacje np. X:\Folder)"
 			read lokalizacja
 			cd $lokalizacja
 			git add .
