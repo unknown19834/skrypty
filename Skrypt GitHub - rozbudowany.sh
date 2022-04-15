@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Czy dodajesz commita po raz pierwszy? [Podaj tak lub nie]"
+echo "Czy dodajesz commita po raz pierwszy? [Podaj tak ,nie lub pomoc]"
 while :
 do 
 	read decyzja 
@@ -38,8 +38,16 @@ do
 			git push -u origin master
 			break
 			;;
+		pomoc)
+			echo "Tak - otrzymasz zapytanie o email, nazwę użytkownia, lokalizację na dysku, link do repozytrium oraz nazwę commita."
+			echo "Program zacznie śledzić podaną lokalizację (git init), doda wszystko co jest w folderze do commita o podanej nazwie, oraz utworzy branch o nazwie [master]"
+			echo " "
+			echo "Nie - otrzymasz zapytanie o lokalizację na dysku folderu który chesz wysłać do repozytrium oraz o nazwę commita"
+			echo "Program sam odczyta do jakiego repozytorium będzie wysłany commit jeżeli kiedykolwiek była wysłana zawartość foldera do repozytorium"
+			echo "Jeżeli nigdy nie wysyłałeś zawartości foldera na serwer wybierz [tak] jeżeli robiłeś to kiedyś wybierz [nie]"
+			;;
 		*)
-			echo "Nie rozumiem"
+			echo "Nie rozumiem, napisz tak, nie lub pomoc"
 			;;
 	esac 
 done
