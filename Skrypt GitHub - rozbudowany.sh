@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Czy dodajesz commita po raz pierwszy? [Podaj tak ,nie lub pomoc]"
+echo "Czy dodajesz commita po raz pierwszy? [Podaj tak, nie lub pomoc]"
 while :
 do 
 	read decyzja 
